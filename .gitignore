@@ -1,0 +1,36 @@
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignorar cache e logs do PHP
+src/controllers/*.log
+src/controllers/*.cache
+src/controllers/*.tmp
+src/controllers/*.bak
+
+# Ignorar arquivos sensíveis
+.env
+.env.local
+config.php
+
+# Ignorar arquivos temporários e uploads
+public/uploads/
+public/temp/
+public/*.log
+
+# Ignorar Docker arquivos gerados
+Dockerfile~
+docker-compose.override.yml
+
+# Ignorar backups e arquivos de lock
+*.swp
+*.swo
+*.bak
+*.lock
+
+# Ignorar tudo que for gerado automaticamente por IDEs
+*.iml
+*.sublime-project
+*.sublime-workspace
