@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado da Conversão</title>
+    <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
     <main>
+        <h1>
+            Converta seu dinheiro para Dólar (USD)
+        </h1>
         <?php 
             $valorUsuarioReal = $_GET["valorReal"] ?? 0.00;
             $url = 'https://economia.awesomeapi.com.br/json/last/USD-BRL';
@@ -20,8 +24,9 @@
             //Convertendo o dinheiro do usuário para dólar
             $valorUsuarioDolar = round($valorUsuarioReal / $cotacaoDolar, 2);
 
-            echo "<p>O seu dinheiro (R$ $valorUsuarioReal) equivale a: USD $ $valorUsuarioDolar";
-            
+            echo "<p>O seu dinheiro (R$ $valorUsuarioReal) equivale a: 
+            <strong>USD $ $valorUsuarioDolar</strong>";
+
         ?>
     </main>
 </body>
