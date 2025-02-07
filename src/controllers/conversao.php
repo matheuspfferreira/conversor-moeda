@@ -9,7 +9,7 @@
 <body>
     <main>
         <h1>
-            Converta seu dinheiro para Dólar (USD)
+            Converta seu dinheiro para Dólar
         </h1>
         <?php 
             $valorUsuarioReal = $_GET["valorReal"] ?? 0.00;
@@ -28,6 +28,7 @@
             <strong>USD $ $valorUsuarioDolar</strong>";
 
         ?>
+        <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
     </main>
 </body>
 </html>
